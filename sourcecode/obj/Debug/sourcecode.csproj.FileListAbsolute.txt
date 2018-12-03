@@ -1,0 +1,13 @@
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\bin\Debug\sourcecode.exe.config
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\bin\Debug\sourcecode.exe
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\bin\Debug\sourcecode.pdb
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\bin\Debug\EntityFramework.dll
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\bin\Debug\EntityFramework.SqlServer.dll
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\bin\Debug\EntityFramework.xml
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\bin\Debug\EntityFramework.SqlServer.xml
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.csprojResolveAssemblyReference.cache
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.home.resources
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.Properties.Resources.resources
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.csproj.GenerateResource.Cache
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.exe
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.pdb
