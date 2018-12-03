@@ -17,6 +17,7 @@ namespace sourcecode
         public string Email { get; set; }
         public DateTime BirthDate { get; set; }
         public int TripNumber { get; set; }
+        public decimal Price { get; set; }
 
     }
 }

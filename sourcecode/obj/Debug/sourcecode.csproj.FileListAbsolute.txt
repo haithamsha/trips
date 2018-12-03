@@ -5,9 +5,16 @@ E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\bin\Debug\EntityFr
 E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\bin\Debug\EntityFramework.SqlServer.dll
 E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\bin\Debug\EntityFramework.xml
 E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\bin\Debug\EntityFramework.SqlServer.xml
-E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.csprojResolveAssemblyReference.cache
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.booking.resources
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.BookingDetails.resources
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.Confirmation.resources
 E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.home.resources
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.Login.resources
 E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.Properties.Resources.resources
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.TripManagement.resources
 E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.csproj.GenerateResource.Cache
 E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.exe
 E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.pdb
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.TicketReport.resources
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.csprojResolveAssemblyReference.cache
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.PassengerForm.resources

@@ -17,8 +17,6 @@ namespace sourcecode
         public DateTime ReturnDate { get; set; }
         public string TravelTime { get; set; }
         public string ReturnTime { get; set; }
-
-        public string PassengerName { get; set; }
-
+        public decimal Price { get; set; }
     }
 }

@@ -55,6 +55,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booking.Designer.cs">
+      <DependentUpon>booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingDetails.Designer.cs">
+      <DependentUpon>BookingDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirmation.Designer.cs">
+      <DependentUpon>Confirmation.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataBaseContext.cs" />
     <Compile Include="home.cs">
       <SubType>Form</SubType>
@@ -69,16 +87,46 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="PassengerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassengerForm.Designer.cs">
+      <DependentUpon>PassengerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ticket.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicketReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketReport.Designer.cs">
+      <DependentUpon>TicketReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Trip.cs" />
+    <Compile Include="TripManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TripManagement.Designer.cs">
+      <DependentUpon>TripManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="booking.resx">
+      <DependentUpon>booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingDetails.resx">
+      <DependentUpon>BookingDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirmation.resx">
+      <DependentUpon>Confirmation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="home.resx">
       <DependentUpon>home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassengerForm.resx">
+      <DependentUpon>PassengerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -89,6 +137,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TicketReport.resx">
+      <DependentUpon>TicketReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TripManagement.resx">
+      <DependentUpon>TripManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
