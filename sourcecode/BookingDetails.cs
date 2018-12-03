@@ -12,7 +12,7 @@ namespace sourcecode
 {
     public partial class BookingDetails : Form
     {
-        int index = 0;
+        public static int ticketNumber = 0;
         public BookingDetails()
         {
             InitializeComponent();
@@ -20,7 +20,14 @@ namespace sourcecode
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            listView1.Items.Add(txtName.Text);
+            ListViewItem item = new ListViewItem();
+            item.Text = txtName.Text;
+            item.SubItems.Add(txtphone.Text);
+            item.SubItems.Add(txtemail.Text);
+            item.SubItems.Add(txtbirthdate.Value.ToString());
+            item.SubItems.Add(txtnotes.Text);
+
+            listView1.Items.Add(item);
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
@@ -56,7 +63,7 @@ namespace sourcecode
             else
             {
                 DataBaseContext db = new DataBaseContext();
-                db.Tickets.Add(new Ticket
+               var t = db.Tickets.Add(new Ticket
                 {
                     BirthDate = txtbirthdate.Value,
                     Email = txtemail.Text,
@@ -67,6 +74,7 @@ namespace sourcecode
                     TripNumber = booking.tribNumber
                 });
                 db.SaveChanges();
+                ticketNumber = t.TicketNumber;
                 Confirmation frm = new Confirmation();
                 frm.Show();
                 this.Hide();

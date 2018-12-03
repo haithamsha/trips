@@ -58,10 +58,12 @@ namespace sourcecode
             {
                 button3.Visible = true;
                 button4.Visible = true;
+                button2.Visible = false;
             }
             else if(userType == "salesman")
             {
                 button6.Visible = true;
+                button1.Visible = false;
             }
         }
 

@@ -20,6 +20,9 @@ namespace sourcecode
         private void button2_Click(object sender, EventArgs e)
         {
             this.Dispose();
+            home frm = new home();
+            frm.Show();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,6 +43,13 @@ namespace sourcecode
                 }
                 else
                 {
+                    if(data.Type == "salesman")
+                    {
+                        booking frmb = new booking();
+                        frmb.Show();
+                    }
+                    
+
                     home frm = new home();
                     frm.userName = data.Name;
                     frm.userType = data.Type;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PassengerForm));
             this.label1 = new System.Windows.Forms.Label();
             this.txtNO = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,6 +50,8 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblBirthDate = new System.Windows.Forms.Label();
             this.lblNotes = new System.Windows.Forms.Label();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,16 +95,17 @@
             this.btnSearch.TabIndex = 26;
             this.btnSearch.Text = "Searh";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnPrint
             // 
-            this.btnPrint.Location = new System.Drawing.Point(507, 403);
+            this.btnPrint.Location = new System.Drawing.Point(487, 392);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(75, 23);
             this.btnPrint.TabIndex = 27;
             this.btnPrint.Text = "Print";
             this.btnPrint.UseVisualStyleBackColor = true;
-            this.btnPrint.Visible = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // groupBox1
             // 
@@ -119,9 +123,9 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Location = new System.Drawing.Point(31, 158);
+            this.groupBox1.Location = new System.Drawing.Point(14, 158);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(470, 257);
+            this.groupBox1.Size = new System.Drawing.Size(429, 257);
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Passenger Details";
@@ -181,9 +185,8 @@
             this.lblName.AutoSize = true;
             this.lblName.Location = new System.Drawing.Point(90, 45);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(13, 13);
+            this.lblName.Size = new System.Drawing.Size(0, 13);
             this.lblName.TabIndex = 10;
-            this.lblName.Text = "d";
             // 
             // label8
             // 
@@ -200,9 +203,8 @@
             this.lblTripNumber.AutoSize = true;
             this.lblTripNumber.Location = new System.Drawing.Point(393, 31);
             this.lblTripNumber.Name = "lblTripNumber";
-            this.lblTripNumber.Size = new System.Drawing.Size(13, 13);
+            this.lblTripNumber.Size = new System.Drawing.Size(0, 13);
             this.lblTripNumber.TabIndex = 12;
-            this.lblTripNumber.Text = "d";
             // 
             // label10
             // 
@@ -219,45 +221,55 @@
             this.lblPrice.AutoSize = true;
             this.lblPrice.Location = new System.Drawing.Point(393, 61);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(13, 13);
+            this.lblPrice.Size = new System.Drawing.Size(0, 13);
             this.lblPrice.TabIndex = 14;
-            this.lblPrice.Text = "d";
             // 
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.Location = new System.Drawing.Point(90, 85);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(13, 13);
+            this.lblPhone.Size = new System.Drawing.Size(0, 13);
             this.lblPhone.TabIndex = 15;
-            this.lblPhone.Text = "d";
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Location = new System.Drawing.Point(90, 130);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(13, 13);
+            this.lblEmail.Size = new System.Drawing.Size(0, 13);
             this.lblEmail.TabIndex = 16;
-            this.lblEmail.Text = "d";
             // 
             // lblBirthDate
             // 
             this.lblBirthDate.AutoSize = true;
             this.lblBirthDate.Location = new System.Drawing.Point(90, 165);
             this.lblBirthDate.Name = "lblBirthDate";
-            this.lblBirthDate.Size = new System.Drawing.Size(13, 13);
+            this.lblBirthDate.Size = new System.Drawing.Size(0, 13);
             this.lblBirthDate.TabIndex = 17;
-            this.lblBirthDate.Text = "d";
             // 
             // lblNotes
             // 
             this.lblNotes.AutoSize = true;
             this.lblNotes.Location = new System.Drawing.Point(90, 211);
             this.lblNotes.Name = "lblNotes";
-            this.lblNotes.Size = new System.Drawing.Size(13, 13);
+            this.lblNotes.Size = new System.Drawing.Size(0, 13);
             this.lblNotes.TabIndex = 18;
-            this.lblNotes.Text = "d";
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
             // 
             // PassengerForm
             // 
@@ -303,5 +315,7 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.Label lblPrice;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }

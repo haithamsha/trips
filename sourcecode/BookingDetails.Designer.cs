@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ColumnHeader columnHeader2;
             this.listView1 = new System.Windows.Forms.ListView();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
@@ -35,28 +36,40 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnBook = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtphone = new System.Windows.Forms.TextBox();
-            this.txtemail = new System.Windows.Forms.TextBox();
-            this.txtnotes = new System.Windows.Forms.TextBox();
-            this.txtbirthdate = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
             this.labelprice = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtbirthdate = new System.Windows.Forms.DateTimePicker();
+            this.txtnotes = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
+            this.txtphone = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listView1
             // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5});
             this.listView1.Location = new System.Drawing.Point(331, 12);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(181, 343);
+            this.listView1.Size = new System.Drawing.Size(367, 357);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // btnAdd
@@ -130,87 +143,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Passenger Details";
             // 
-            // label1
+            // labelprice
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Phone";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 130);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Email";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 165);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Birth Date";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(17, 211);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Notes";
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(88, 45);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(208, 20);
-            this.txtName.TabIndex = 5;
-            // 
-            // txtphone
-            // 
-            this.txtphone.Location = new System.Drawing.Point(88, 85);
-            this.txtphone.Name = "txtphone";
-            this.txtphone.Size = new System.Drawing.Size(208, 20);
-            this.txtphone.TabIndex = 6;
-            // 
-            // txtemail
-            // 
-            this.txtemail.Location = new System.Drawing.Point(88, 130);
-            this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(208, 20);
-            this.txtemail.TabIndex = 7;
-            // 
-            // txtnotes
-            // 
-            this.txtnotes.Location = new System.Drawing.Point(88, 208);
-            this.txtnotes.Multiline = true;
-            this.txtnotes.Name = "txtnotes";
-            this.txtnotes.Size = new System.Drawing.Size(208, 56);
-            this.txtnotes.TabIndex = 8;
-            // 
-            // txtbirthdate
-            // 
-            this.txtbirthdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtbirthdate.Location = new System.Drawing.Point(88, 165);
-            this.txtbirthdate.Name = "txtbirthdate";
-            this.txtbirthdate.Size = new System.Drawing.Size(208, 20);
-            this.txtbirthdate.TabIndex = 9;
+            this.labelprice.AutoSize = true;
+            this.labelprice.Location = new System.Drawing.Point(85, 289);
+            this.labelprice.Name = "labelprice";
+            this.labelprice.Size = new System.Drawing.Size(31, 13);
+            this.labelprice.TabIndex = 11;
+            this.labelprice.Text = "Price";
             // 
             // label6
             // 
@@ -221,20 +161,114 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Price";
             // 
-            // labelprice
+            // txtbirthdate
             // 
-            this.labelprice.AutoSize = true;
-            this.labelprice.Location = new System.Drawing.Point(85, 289);
-            this.labelprice.Name = "labelprice";
-            this.labelprice.Size = new System.Drawing.Size(31, 13);
-            this.labelprice.TabIndex = 11;
-            this.labelprice.Text = "Price";
+            this.txtbirthdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtbirthdate.Location = new System.Drawing.Point(88, 165);
+            this.txtbirthdate.Name = "txtbirthdate";
+            this.txtbirthdate.Size = new System.Drawing.Size(208, 20);
+            this.txtbirthdate.TabIndex = 9;
+            // 
+            // txtnotes
+            // 
+            this.txtnotes.Location = new System.Drawing.Point(88, 208);
+            this.txtnotes.Multiline = true;
+            this.txtnotes.Name = "txtnotes";
+            this.txtnotes.Size = new System.Drawing.Size(208, 56);
+            this.txtnotes.TabIndex = 8;
+            // 
+            // txtemail
+            // 
+            this.txtemail.Location = new System.Drawing.Point(88, 130);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(208, 20);
+            this.txtemail.TabIndex = 7;
+            // 
+            // txtphone
+            // 
+            this.txtphone.Location = new System.Drawing.Point(88, 85);
+            this.txtphone.Name = "txtphone";
+            this.txtphone.Size = new System.Drawing.Size(208, 20);
+            this.txtphone.TabIndex = 6;
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(88, 45);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(208, 20);
+            this.txtName.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(17, 211);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Notes";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(17, 165);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Birth Date";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(17, 130);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(32, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Email";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Phone";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Name";
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Name";
+            // 
+            // columnHeader2
+            // 
+            columnHeader2.Text = "Phone";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Email";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Birth Date";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Notes";
+            this.columnHeader5.Width = 100;
             // 
             // BookingDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(597, 505);
+            this.ClientSize = new System.Drawing.Size(710, 505);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnBook);
             this.Controls.Add(this.btnRemove);
@@ -272,5 +306,9 @@
         private System.Windows.Forms.DateTimePicker txtbirthdate;
         private System.Windows.Forms.Label labelprice;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }
