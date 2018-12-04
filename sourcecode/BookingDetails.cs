@@ -71,7 +71,8 @@ namespace sourcecode
                     PassengerName = txtName.Text,
                     Phone = txtphone.Text,
                     Price = decimal.Parse(labelprice.Text),
-                    TripNumber = booking.tribNumber
+                    TripNumber = booking.tribNumber,
+                    SalesMan = home.userName
                 });
                 db.SaveChanges();
                 ticketNumber = t.TicketNumber;

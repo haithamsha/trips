@@ -23,5 +23,21 @@ namespace sourcecode
 
             dataGridView1.DataSource = db.Tickets.ToList();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DataBaseContext db = new DataBaseContext();
+
+            var data = db.Tickets.GroupBy(t => t.TripNumber).OrderByDescending(tt => tt.Count()).Select(g =>  new { TripNumber =  g.Key });
+            dataGridView1.DataSource = data.Take(1).ToList();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DataBaseContext db = new DataBaseContext();
+
+            var data = db.Tickets.GroupBy(t => t.SalesMan).OrderByDescending(tt => tt.Count()).Select(g => new { SalesMan = g.Key });
+            dataGridView1.DataSource = data.Take(1).ToList();
+        }
     }
 }

@@ -51,8 +51,8 @@ namespace sourcecode
                     
 
                     home frm = new home();
-                    frm.userName = data.Name;
-                    frm.userType = data.Type;
+                    home.userName = data.Name;
+                    home.userType = data.Type;
                     this.Hide();
                     frm.Show();
                    

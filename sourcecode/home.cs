@@ -12,8 +12,8 @@ namespace sourcecode
 {
     public partial class home : Form
     {
-        public string userName = "";
-        public string userType = "";
+        public static string userName = "";
+        public static string userType = "";
         public home()
         {
             InitializeComponent();
@@ -59,11 +59,13 @@ namespace sourcecode
                 button3.Visible = true;
                 button4.Visible = true;
                 button2.Visible = false;
+                button1.Visible = false;
             }
             else if(userType == "salesman")
             {
                 button6.Visible = true;
                 button1.Visible = false;
+                button2.Visible = false;
             }
         }
 
@@ -71,7 +73,6 @@ namespace sourcecode
         {
             TicketReport frm = new TicketReport();
             frm.Show();
-            this.Hide();
         }
     }
 }

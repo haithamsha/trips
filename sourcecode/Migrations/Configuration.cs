@@ -9,7 +9,7 @@ namespace sourcecode.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(sourcecode.DataBaseContext context)

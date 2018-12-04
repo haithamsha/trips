@@ -18,3 +18,4 @@ E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourceco
 E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.TicketReport.resources
 E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.csprojResolveAssemblyReference.cache
 E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.PassengerForm.resources
+E:\haithamsha\Haitham\pp\ref\sourcecode\sourcecode\sourcecode\obj\Debug\sourcecode.Migrations.addSalesMan.resources

@@ -86,6 +86,10 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812041623062_addSalesMan.cs" />
+    <Compile Include="Migrations\201812041623062_addSalesMan.Designer.cs">
+      <DependentUpon>201812041623062_addSalesMan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PassengerForm.cs">
       <SubType>Form</SubType>
@@ -124,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812041623062_addSalesMan.resx">
+      <DependentUpon>201812041623062_addSalesMan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PassengerForm.resx">
       <DependentUpon>PassengerForm.cs</DependentUpon>
