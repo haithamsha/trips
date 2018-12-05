@@ -48,5 +48,10 @@ namespace sourcecode
         {
             e.Graphics.DrawImage(bmp, 0, 0);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

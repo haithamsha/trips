@@ -68,5 +68,10 @@ namespace sourcecode
             BookingDetails frm = new sourcecode.BookingDetails();
             frm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

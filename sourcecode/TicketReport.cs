@@ -39,5 +39,10 @@ namespace sourcecode
             var data = db.Tickets.GroupBy(t => t.SalesMan).OrderByDescending(tt => tt.Count()).Select(g => new { SalesMan = g.Key });
             dataGridView1.DataSource = data.Take(1).ToList();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

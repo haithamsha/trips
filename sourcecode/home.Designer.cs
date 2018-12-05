@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(home));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -36,13 +37,15 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.lblUserName = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(265, 45);
+            this.label1.Location = new System.Drawing.Point(275, 200);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 36);
             this.label1.TabIndex = 0;
@@ -50,7 +53,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(137, 165);
+            this.button1.Location = new System.Drawing.Point(147, 320);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(166, 23);
             this.button1.TabIndex = 1;
@@ -60,7 +63,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(353, 165);
+            this.button2.Location = new System.Drawing.Point(363, 320);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(166, 23);
             this.button2.TabIndex = 2;
@@ -70,7 +73,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(137, 290);
+            this.button3.Location = new System.Drawing.Point(147, 374);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(166, 23);
             this.button3.TabIndex = 3;
@@ -81,7 +84,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(353, 290);
+            this.button4.Location = new System.Drawing.Point(363, 374);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(166, 23);
             this.button4.TabIndex = 4;
@@ -92,7 +95,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(353, 395);
+            this.button5.Location = new System.Drawing.Point(363, 438);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(166, 23);
             this.button5.TabIndex = 5;
@@ -102,7 +105,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(137, 395);
+            this.button6.Location = new System.Drawing.Point(147, 438);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(166, 23);
             this.button6.TabIndex = 6;
@@ -114,16 +117,28 @@
             // lblUserName
             // 
             this.lblUserName.AutoSize = true;
-            this.lblUserName.Location = new System.Drawing.Point(325, 91);
+            this.lblUserName.Location = new System.Drawing.Point(335, 246);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(0, 13);
             this.lblUserName.TabIndex = 7;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(245, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(186, 157);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(700, 494);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -135,6 +150,7 @@
             this.Name = "home";
             this.Text = "Home";
             this.Load += new System.EventHandler(this.home_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,6 +166,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

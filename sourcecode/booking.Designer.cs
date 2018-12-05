@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(booking));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -40,13 +41,16 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.labeltripnumber = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.labeltraveltime = new System.Windows.Forms.Label();
             this.labelreturntime = new System.Windows.Forms.Label();
+            this.labeltraveltime = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.labeltripnumber = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -125,7 +129,7 @@
             // 
             // btnHome
             // 
-            this.btnHome.Location = new System.Drawing.Point(257, 398);
+            this.btnHome.Location = new System.Drawing.Point(218, 397);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(75, 23);
             this.btnHome.TabIndex = 9;
@@ -134,7 +138,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(164, 398);
+            this.btnClear.Location = new System.Drawing.Point(125, 397);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 10;
@@ -143,7 +147,7 @@
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(67, 398);
+            this.btnNext.Location = new System.Drawing.Point(28, 397);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(75, 23);
             this.btnNext.TabIndex = 11;
@@ -159,39 +163,27 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.labeltripnumber);
-            this.groupBox1.Location = new System.Drawing.Point(92, 246);
+            this.groupBox1.Location = new System.Drawing.Point(28, 245);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(322, 129);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             // 
-            // labeltripnumber
+            // labelreturntime
             // 
-            this.labeltripnumber.AutoSize = true;
-            this.labeltripnumber.Location = new System.Drawing.Point(99, 28);
-            this.labeltripnumber.Name = "labeltripnumber";
-            this.labeltripnumber.Size = new System.Drawing.Size(0, 13);
-            this.labeltripnumber.TabIndex = 3;
+            this.labelreturntime.AutoSize = true;
+            this.labelreturntime.Location = new System.Drawing.Point(99, 101);
+            this.labelreturntime.Name = "labelreturntime";
+            this.labelreturntime.Size = new System.Drawing.Size(0, 13);
+            this.labelreturntime.TabIndex = 8;
             // 
-            // label5
+            // labeltraveltime
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 28);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Trip Number";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 63);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Travel time";
+            this.labeltraveltime.AutoSize = true;
+            this.labeltraveltime.Location = new System.Drawing.Point(99, 63);
+            this.labeltraveltime.Name = "labeltraveltime";
+            this.labeltraveltime.Size = new System.Drawing.Size(0, 13);
+            this.labeltraveltime.TabIndex = 7;
             // 
             // label7
             // 
@@ -203,27 +195,63 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Return time";
             // 
-            // labeltraveltime
+            // label6
             // 
-            this.labeltraveltime.AutoSize = true;
-            this.labeltraveltime.Location = new System.Drawing.Point(99, 63);
-            this.labeltraveltime.Name = "labeltraveltime";
-            this.labeltraveltime.Size = new System.Drawing.Size(0, 13);
-            this.labeltraveltime.TabIndex = 7;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(6, 63);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 13);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Travel time";
             // 
-            // labelreturntime
+            // label5
             // 
-            this.labelreturntime.AutoSize = true;
-            this.labelreturntime.Location = new System.Drawing.Point(99, 101);
-            this.labelreturntime.Name = "labelreturntime";
-            this.labelreturntime.Size = new System.Drawing.Size(0, 13);
-            this.labelreturntime.TabIndex = 8;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 28);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(76, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Trip Number";
+            // 
+            // labeltripnumber
+            // 
+            this.labeltripnumber.AutoSize = true;
+            this.labeltripnumber.Location = new System.Drawing.Point(99, 28);
+            this.labeltripnumber.Name = "labeltripnumber";
+            this.labeltripnumber.Size = new System.Drawing.Size(0, 13);
+            this.labeltripnumber.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(315, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(108, 88);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(358, 380);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 40);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // booking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(445, 442);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnClear);
@@ -241,6 +269,7 @@
             this.Load += new System.EventHandler(this.booking_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,5 +295,7 @@
         private System.Windows.Forms.Label labeltripnumber;
         private System.Windows.Forms.Label labelreturntime;
         private System.Windows.Forms.Label labeltraveltime;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

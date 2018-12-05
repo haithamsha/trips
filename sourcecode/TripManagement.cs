@@ -45,5 +45,10 @@ namespace sourcecode
             DataBaseContext db = new DataBaseContext();
             dataGridView1.DataSource = db.Trips.ToList(); ;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
