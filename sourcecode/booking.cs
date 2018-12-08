@@ -65,8 +65,15 @@ namespace sourcecode
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            BookingDetails frm = new sourcecode.BookingDetails();
-            frm.Show();
+            if(comboBox1.Text == "" || comboBox2.Text == "")
+            {
+                MessageBox.Show("Please choose the trip first");
+            }
+            else
+            {
+                BookingDetails frm = new sourcecode.BookingDetails();
+                frm.Show();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -58,14 +58,14 @@ namespace sourcecode
             {
                 button3.Visible = true;
                 button4.Visible = true;
-                button2.Visible = false;
-                button1.Visible = false;
+                //button2.Visible = false;
+                //button1.Visible = false;
             }
             else if(userType == "salesman")
             {
                 button6.Visible = true;
-                button1.Visible = false;
-                button2.Visible = false;
+                //button1.Visible = false;
+                //button2.Visible = false;
             }
         }
 
@@ -73,6 +73,11 @@ namespace sourcecode
         {
             TicketReport frm = new TicketReport();
             frm.Show();
+        }
+
+        private void home_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

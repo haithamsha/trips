@@ -35,7 +35,15 @@ namespace sourcecode
         private void btnRemove_Click(object sender, EventArgs e)
         {
             //listView1.Items.Find()
-            listView1.Items.Remove(listView1.SelectedItems[0]);
+            if(listView1.Items.Count == 0)
+            {
+                MessageBox.Show("There is no items to remove");
+            }
+            else
+            {
+                listView1.Items.Remove(listView1.SelectedItems[0]);
+            }
+            
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -79,8 +87,11 @@ namespace sourcecode
                 db.SaveChanges();
                 ticketNumber = t.TicketNumber;
 
-                string body = "<p>Thanks for your booking</p><p>Ticket Number: "+ t.TicketNumber + "</p><p>Name: "+ txtName.Text+"</p><p>Trip Number: "+booking.tribNumber+"</p><p>Price: "+labelprice.Text+"</p>";
-                sendEmail(txtemail.Text, "Ticket Confirmation", body);
+               if(txtemail.Text != "")
+                {
+                    string body = "<p>Thanks for your booking</p><p>Ticket Number: " + t.TicketNumber + "</p><p>Name: " + txtName.Text + "</p><p>Trip Number: " + booking.tribNumber + "</p><p>Price: " + labelprice.Text + "</p>";
+                    sendEmail(txtemail.Text, "Ticket Confirmation", body);
+                }
 
                 Confirmation frm = new Confirmation();
                 frm.Show();

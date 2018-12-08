@@ -19,7 +19,7 @@ namespace sourcecode
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (txtFrom.Text == "" || txtTo.Text == "")
+            if (txtFrom.Text == "" || txtTo.Text == "" || txtprice.Text == "")
             {
                 MessageBox.Show("Please complete fileds first");
                 return;
